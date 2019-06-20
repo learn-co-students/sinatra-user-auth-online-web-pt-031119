@@ -1,3 +1,5 @@
+require 'pry'
+
 class ApplicationController < Sinatra::Base
   register Sinatra::ActiveRecordExtension
   set :views, Proc.new { File.join(root, "../views/") }
@@ -31,6 +33,9 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/sessions' do
+    # @user = User.find_by(email: params["email"], password: params["password"])
+    # session[:user_id] = @user.id
+
     @user = User.find_by(email: params[:email], password: params[:password])
     if @user
       session[:user_id] = @user.id
