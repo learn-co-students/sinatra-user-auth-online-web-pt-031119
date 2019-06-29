@@ -5,6 +5,7 @@ describe "ApplicationController" do
     
     before(:each) do 
       get '/'
+      erb :home 
     end
 
     it "responds with a 200 status code" do

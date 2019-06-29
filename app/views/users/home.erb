@@ -1,4 +1,7 @@
+<!--the only variables that a view can access are instance variables set in the controller route that renders that particular view page-->
+
 "Welcome, <%=@user.name%>!"
 
 <a href="/sessions/logout">Log Out</a>
 
+<!--the template for the user's homepage. This page is rendered by the get '/users/home' route in the controller.-->
