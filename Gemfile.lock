@@ -100,7 +100,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (= 4.2)
+  activerecord
   capybara
   database_cleaner!
   launchy
@@ -112,7 +112,7 @@ DEPENDENCIES
   shotgun
   sinatra
   sinatra-activerecord
-  sqlite3 (~> 1.3.6)
+  sqlite3
   thin
 
 BUNDLED WITH
